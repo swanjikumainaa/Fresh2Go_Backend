@@ -1,5 +1,5 @@
 
-# searching engine
+# searching for a product engine
 
 class DictionarySearch:
     def __init__(self, products):
