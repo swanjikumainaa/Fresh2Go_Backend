@@ -1,3 +1,7 @@
+# Import required modules
+import random
+import string
+
 # define a function to generate a random password
 def generate_password(length):
     letters = string.ascii_lowercase
@@ -6,9 +10,13 @@ def generate_password(length):
 # define a function to send password recovery email
 def send_recovery_email(email):
     # code to send email with password recovery link or temporary password
+    pass
 
-# define a function to check password recovery 
- def check_recovery_request(email):
+# Define UserDatabase
+UserDatabase = {'example@example.com': {'password': 'password123'}}
+
+# Define a function to check password recovery 
+def check_recovery_request(email):
     # check if email exists in the database
     if email in UserDatabase:
         # generate a new temporary password
